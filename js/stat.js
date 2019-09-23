@@ -33,7 +33,7 @@ window.renderStatistics = function (ctx, names, times) {
   };
   var maxTime = getMaxElement(times);
 
-  /*for (var i = 0; i < names.length; i++) {
+  for (var i = 0; i < names.length; i++) {
     var currentTime = times[i];
     var currentPlayer = names[i];
     var columnHeight = currentTime / maxTime * COLUMN_HEIGHT;
@@ -49,5 +49,5 @@ window.renderStatistics = function (ctx, names, times) {
       ctx.fillStyle = 'hsl(250, ' + Math.random() * 100 + '%, 50%)';
     }
     ctx.fillRect(columnX, y: COLUMN_GAP - columnHeight, COLUMN_WIDTH, columnHeight);
-  }*/
+  }
 };
