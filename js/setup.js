@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 var setupWizard = document.querySelector('.setup');
 setupWizard.classList.remove('hidden');
 
@@ -14,9 +14,10 @@ var namesWizard = ['Иван', 'Хуан Себастьян', 'Мария', 'К�
 
 for (var i = 0; i <= namesWizard.length; i++) {
   var wizardElement = similarWizardTemplate.cloneNode(true);
+  wizardElement.querySelector('.setup-similar-label').textContent = namesWizard[i];
 
   similarListElement.appendChild(wizardElement);
-}
+};
 //var usersPlayer = [];
 // var namesWizard = ['Иван', 'Хуан Себастьян', 'Мария', 'Кристоф', 'Виктор', 'Юлия', 'Люпита', 'Вашингтон'];
 // var surnames = ['да Марья', 'Верон', 'Мирабелла', 'Вальц', 'Онопко', 'Топольницкая', 'Нионго', 'Ирвинг'];
