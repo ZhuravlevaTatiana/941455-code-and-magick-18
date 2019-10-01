@@ -43,7 +43,7 @@ var random = function (min, max) {
 var getRandomItemFromArray = function (wizards) {
   return wizards[random(0, wizards.length - 1)];
 };
-var createRandomWizards = function () {
+var generateRandomWizards = function () {
   var wizardArray = [];
   for (var i = 0; i <= WIZARDS_LENGTH; i++) {
     wizardArray.push({
@@ -55,9 +55,10 @@ var createRandomWizards = function () {
   }
   return wizardArray;
 };
+var wizards = generateRandomWizards();
 var similarListElement = document.querySelector('.setup-similar-list');
 var similarWizardTemplate = document.querySelector('#similar-wizard-template').content.querySelector('.setup-similar-item');
-var render = function (wizard) {
+var render = function (wizards) {
   var wizardElement = similarWizardTemplate.cloneNode(true);
   wizardElement.querySelector('.setup-similar-label').textContent = wizard.name;
   wizardElement.querySelector('.setup-similar-label').textContent = wizard.surname;
