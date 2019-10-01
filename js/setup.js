@@ -56,9 +56,7 @@ var createRandomWizards = function () {
   return wizardArray;
 };
 var similarListElement = document.querySelector('.setup-similar-list');
-var similarWizardTemplate = document.querySelector('#similar-wizard-template')
-  .сontent
-  .querySelector('.setup-similar-item');
+var similarWizardTemplate = document.querySelector('#similar-wizard-template').content.querySelector('.setup-similar-item');
 var render = function (wizard) {
   var wizardElement = similarWizardTemplate.cloneNode(true);
   wizardElement.querySelector('.setup-similar-label').textContent = wizard.name;
