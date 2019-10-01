@@ -47,12 +47,12 @@ var generateRandomWizards = function () {
   var wizardArray = [];
   for (var i = 0; i <= WIZARDS_LENGTH; i++) {
     wizardArray.push({
-      name: getRandomItemFromArray(NAMES) + ''getRandomItemFromArray(SURNAMES) +,
+      name: getRandomItemFromArray(NAMES) + getRandomItemFromArray(SURNAMES),
       coatColor: getRandomItemFromArray(COAT_COLORS),
       eyesColor: getRandomItemFromArray(EYES_COLORS)
     });
-}
-return wizardArray;
+  }
+  return wizardArray;
 };
 var wizards = generateRandomWizards();
 var similarListElement = document.querySelector('.setup-similar-list');
