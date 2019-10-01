@@ -47,10 +47,10 @@ var createRandomWizards = function () {
   var wizardArray = [];
   for (var i = 0; i <= WIZARDS_LENGTH; i++) {
     wizardArray.push({
-      name: getRandomItemFromArray('NAMES'),
-      surname: getRandomItemFromArray('SURNAMES'),
-      coatСolor: getRandomItemFromArray('COAT_COLORS'),
-      eyesСolor: getRandomItemFromArray('EYES_COLORS')
+      name: getRandomItemFromArray(NAMES),
+      surname: getRandomItemFromArray(SURNAMES),
+      coatСolor: getRandomItemFromArray(COAT_COLORS),
+      eyesСolor: getRandomItemFromArray(EYES_COLORS)
     });
   }
   return wizardArray;
