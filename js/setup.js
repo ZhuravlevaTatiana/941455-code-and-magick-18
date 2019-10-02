@@ -41,7 +41,7 @@ var random = function (min, max) {
   return Math.round(min - 0.5 + Math.random() * (max - min + 1));
 };
 var getRandomItemFromArray = function (arr) {
-  return arr[random(0, wizards.length - 1)];
+  return arr[random(0, arr.length - 1)];
 };
 var generateRandomWizards = function () {
   var wizardArray = [];
